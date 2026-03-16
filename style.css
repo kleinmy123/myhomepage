@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Director-Variable";
+  src: 
+    url("fonts/Director-Variable.woff2") format("woff2"),
+    url("fonts/Director-Variable.woff") format("woff");
+}   
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "", sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+h1 {
+    width: 90vw;
+    height: auto;
+    font-size: 40px;
+    line-height: 22px;
+    color: rgb(3, 6, 9);
+    margin-top: 21px;
+    margin-left: 18px;
+    margin-right 18px;
+    font-family: "Times", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0px;
+}
+
+.flower-sun {
+    width: 21vw;
+    min-width: 150px;
+    height: auto;
+    display: block;
+    margin-left: 42px;
+    margin-top: auto;
+    margin-bottom: 42px;
+    position: absolute;
+    bottom: 42px;
+}
+
+footer {
+    font-family: Times;
+color: rgb(255, 255, 255);
+    font-size: 18px;
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    transform: translateX(50%);  
+ }
