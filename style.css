@@ -1,28 +1,125 @@
-@font-face {
-  font-family: "Director-Variable";
-  src: 
-    url("fonts/Director-Variable.woff2") format("woff2"),
-    url("fonts/Director-Variable.woff") format("woff");
-}   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* wichtig für responsive Breite */
+}
+
+
+/* Globale font-Variablen definieren */
+ {
+    margin-top: 21px;
+    font-family: "Times", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(3, 6, 9);
+    font-weight: 400;
+    letter-spacing: 0.1cap;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "", sans-serif;
+    box-sizing: border-box;
     background-color: rgb(231, 231, 231);
-}
-h1 {
-    width: 90vw;
-    height: auto;
-    font-size: 40px;
-    line-height: 22px;
-    color: rgb(3, 6, 9);
-    margin-top: 21px;
-    margin-left: 18px;
-    margin-right 18px;
+    margin: 18px;
     font-family: "Times", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(3, 6, 9);
     font-weight: 400;
-    letter-spacing: -0px;
+    letter-spacing: 0.1cap;
+}
+
+body.imprint {
+    width: 66%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body.imprint {
+      width: 100vw;
+      margin-right: 18px;
+    }
+  }
+
+.top {
+  padding: 6px 0 0 6px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.top h1 {
+  flex: 0 0 85%;
+  margin: 0;
+}
+
+.top a.impressum {
+  flex: 0 0 15%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 630px) {
+
+  .top {
+    flex-direction: column;
+  }
+
+  .top h1,
+  .top a.impressum {
+    flex: 100%;
+    text-align: left;
+  }
+
+}
+
+h1 {
+    margin-top: 21px;
+    font-family: "Times", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(3, 6, 9);
+    font-weight: 400;
+    letter-spacing: 0.1cap;
+}
+
+h2 {
+    width: 90vw;
+    margin-left: 18px;
+    margin-bottom: 3px;
+    font-family: "Times", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    letter-spacing: 0.1cap;
+}
+
+h3 {
+    width: 90vw;
+    margin-top: 48px;
+    margin-bottom: -0px;
+    font-family: "Times", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(194, 194, 194);
+    font-weight: 400;
+    letter-spacing: 0.1cap;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(3, 6, 9);
+    hyperlink-color: rgb(3, 6, 9);
+    font-style: italic;
+}
+
+.list {
+    list-style-type: circle;
+    margin-left: 18px;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .flower-sun {
@@ -33,16 +130,24 @@ h1 {
     margin-left: 42px;
     margin-top: auto;
     margin-bottom: 42px;
-    position: absolute;
+    position: fixed;
     bottom: 42px;
 }
 
-footer {
-    font-family: Times;
-color: rgb(255, 255, 255);
-    font-size: 18px;
-    position: absolute;
-    bottom: 18px;
-    left: 18px;
-    transform: translateX(50%);  
- }
+/*
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-left: 18px;
+  margin-top: 18px;
+}
+
+.box {
+  width: 1 1 150px;
+  padding: 18px;
+  border: 1px solid black;
+}
+*/
+
+
