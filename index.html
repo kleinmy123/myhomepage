@@ -4,22 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mona Mayer</title>
-    <meta name="description" content="Mona Mayer is a designer and artist based in Karlsruhe, Germany. Welcome to her website.">
+    <meta name="description" content="Mona Mayer is a designer and artist based in Karlsruhe, Germany.
+                                    Welcome to my website, it includes a whimsical drawing of a sun with a human face,
+                                    surrounded by petal-like shapes and a sprouting flower above. I found the 
+                                    illustration in a book with poems by Josef Eichendorff with the title 
+                                    'Wanderlieder'. Renate Totzke-Israel is the artist who made the illustrations.
+                                    I recently read one of them out loud on top of a hill in 
+                                    the woods, close where my parents live. I read it out to the valley, opening 
+                                    up in front of me, for the people following their daily live-routines down 
+                                    there. It’s a romantic gesture, Joseph Eichendorff was a romantic poet. 
+                                    I will add the name of the artist who draw the little flower sun soon.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-
-    </header>
-
     <main>
         <div class="top">
-        <h1 class="heading">Mona Mayer is a designer and artist based in Karlsruhe, Germany
-                            <br>
-                            hello@monamayer.com
-        </h1>
-        <a class="link impressum" href="imprint.html">Imprint</a>
-    
+            <div class="top-left">
+        <h1 class="heading">Mona Mayer is a designer and artist based in Karlsruhe, Germany</h1>
+        
+        <p class="email">
+            <span id="email"></span>
+                </p>
+
+            <script>
+                let user = "hello";
+                let domain = "monamayer.com";
+
+                document.getElementById("email").innerHTML =
+                 `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+                </script>
+            </div>
+        
+            <div class="top-right-impressum">
+            <div class="top-right">
+                <a class="link white" href="https://www.instagram.com/mo_myr_/">Instagram</a>
+                <a class="link white" href="https://www.ninaprotocol.com/hubs/ww1?tab=releases">ww1</a>
+                <a class="link white" href="https://a-place-in-the-woods.net/">APitW</a>
+            </div>
+                <a class="link impressum" href="imprint.html">Imprint</a>
+            </div>
+        </div>
         
         <!--
             <div class="container">
@@ -34,7 +58,6 @@
             </div>
         </div>
             !-->
-        </div>  
         <img class="flower-sun" src="files/sblume.png" alt="A whimsical drawing of a sun with a human face, surrounded by petal-like shapes and a sprouting flower above. I found the illustration in a book with poems be Josef Eichendorff, the title is 'Wanderlieder'. I recently read one of them out loud on top of a hill in the woods, close where my parents live. I read it out to the valley, opening up in front of me, for the people following their daily live-routines down there. It’s a romantic gesture, Joseph Eichendorff was a romantic poet. I will add the name of the artist who draw the little flower sun soon."/>
     </main>
 </body>
