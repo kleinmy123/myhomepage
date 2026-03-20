@@ -7,8 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(236, 235, 239);
     margin: 18px;
     font-family: "Times", sans-serif;
     font-size: 18px;
@@ -19,15 +18,20 @@ body {
 }
 
 body.imprint {
-    width: 66%;
-    max-width: 900px;
+    max-width: 666px;
     box-sizing: border-box;
+    padding: 6px 0 0 6px;
 }
 
+.back {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+}
 @media (max-width: 768px) {
     body.imprint {
-      width: 100vw;
-      margin-right: 18px;
+    width: 100vw;
+    margin-right: 18px;
     }
   }
 
@@ -39,23 +43,24 @@ body.imprint {
 
 .top .top-left {
   margin: 0;
-  padding: 0 18px 0 0;
+ 
 }
 
 .top-right-impressum {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   padding: 0 px 0 0;
   margin-left: auto;
-    
+  gap: 18px;
 }
 
 .top .top-right {
   display: flex;
-  gap: 33px;
+  gap: 18px;
   padding: 0 3px 0 0;
   margin-left: auto;
+  font-size:12px;
 }
 
 .top a.impressum {
@@ -124,8 +129,9 @@ h3 {
 }
 
 .flower-sun {
-    width: 21vw;
-    min-width: 200px;
+    width: 24vw;
+    min-width: 211px;
+    max-width: 500px;
     height: auto;
     display: block;
     margin-left: 42px;
@@ -133,6 +139,7 @@ h3 {
     margin-bottom: 42px;
     position: fixed;
     bottom: 42px;
+    z-index: -1;
 }
 
 /*
@@ -163,16 +170,15 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 px 0 0;
   margin-left: 0;
+  gap: 0px;
     
 }
 
   .top .top-right {
   display: flex;
-  flex-direction: column;
-  gap: 0px;
-  padding: 5px 0px 3px 12px;
+  flex-direction: row;
+  gap: 35px;
   margin-left: 0;
 }
 
@@ -180,6 +186,14 @@ h3 {
   .top a.impressum {
     flex: 100%;
     text-align: left;
+  }
+
+  a.link.impressum{
+    margin-top: -1px;
+  }
+
+ a.link.top-right-impressum {
+   margin-top: 22px;
   }
 
   .flower-sun {
@@ -192,12 +206,6 @@ h3 {
     margin-bottom: 24px;
     position: fixed;
     z-index: -1;
-}
-
-nav {
-    right: 24px;
-    top: 24px;
-    position: fixed;
 }
 
 }
